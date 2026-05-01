@@ -1,6 +1,4 @@
 [README.md](https://github.com/user-attachments/files/27285994/README.md)
-# Viral-storytelling-scripts
-Convierte historias personales en scripts virales de 45-90s para Reels. Combina 100 hooks curados con frameworks de Caleb Ralston, Kallaway y Vinh Giang (4 C's, Regla South Park, 6 Sentidos, 4 Jinetes). Output: hooks + script + CTA + timestamps.
 # Viral Storytelling Scripts
 
 > Convierte historias personales en scripts virales de 45-90s para Instagram Reels, TikTok y YouTube Shorts. Combina 100 hooks curados con frameworks narrativos de Caleb Ralston, Kallaway y Vinh Giang.
