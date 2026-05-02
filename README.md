@@ -1,21 +1,37 @@
-[README.md](https://github.com/user-attachments/files/27285994/README.md)
-# Viral Storytelling Scripts
+[README.md](https://github.com/user-attachments/files/27307906/README.md)
+# Viral Storytelling Scripts (v2)
 
 > Convierte historias personales en scripts virales de 45-90s para Instagram Reels, TikTok y YouTube Shorts. Combina 100 hooks curados con frameworks narrativos de Caleb Ralston, Kallaway y Vinh Giang.
 
-Una skill de Claude para creadores de contenido en español que transforma una anécdota real en un paquete completo: 3 hooks variantes + script con timestamps + CTA, aplicando frameworks probados de los mejores storytellers del mundo.
+Una skill de Claude para creadores de contenido en español que transforma una anécdota real en un paquete completo: hooks variantes + script con timestamps + CTA, aplicando frameworks probados de los mejores storytellers del mundo.
+
+---
+
+## 🆕 Novedades v2 (vs v1)
+
+La v2 nace de iteración real con uso en producción. Se identificaron 7 problemas en v1 que se corrigieron:
+
+1. ✅ **Frameworks invisibles** — ya no verbaliza la estructura ("el primer insight es...", "esto es para creadores que..."). Aplica los frameworks como estructura mental, no como guion verbal.
+2. ✅ **Pre-questionnaire obligatorio** — antes de escribir, valida 10 puntos sobre la historia. Si faltan 3 o más, pregunta con opción múltiple.
+3. ✅ **No asume credibilidad** — pregunta siempre la trayectoria del usuario antes de inyectar datos.
+4. ✅ **No asume el alcance del problema** — pregunta si el problema es la herramienta específica o algo más amplio.
+5. ✅ **Output frase por frase** — cada frase en su línea, separada por espacio. Facilita la grabación.
+6. ✅ **Test de oralidad** — detecta frases con comillas, listas verbales o conjunciones repetidas que no fluyen al hablar.
+7. ✅ **Modo construcción colaborativa** — entrega el script sección por sección, esperando feedback antes de avanzar.
 
 ---
 
 ## ✨ Qué hace
 
-Le compartes una historia real tuya y la skill ejecuta automáticamente un flujo de 5 pasos:
+Le compartes una historia real tuya y la skill ejecuta:
 
-1. **Filtra la idea** con los 4 Jinetes del Engagement (Relevancia, No-Obviedad, Absorción, Distancia de Implementación)
-2. **Selecciona 3 hooks** de 3 categorías distintas del banco curado de 100
-3. **Construye el cuerpo** aplicando los frameworks: 4 C's, Regla South Park, 6 Sentidos, Banco de Credibilidad, Puente del Significado
-4. **Diseña el CTA** con formato de comunidad (comenta una palabra → recibes recurso)
-5. **Entrega el paquete** con timestamps aproximados, listo para grabar
+1. **Pre-questionnaire** — valida los 10 puntos obligatorios (qué pasó, cómo te sentiste, qué te sorprendió, etc.). Si faltan, pregunta con opción múltiple.
+2. **Filtra la idea** con los 4 Jinetes del Engagement
+3. **Selecciona 3 hooks** del banco curado de 100, de 3 categorías distintas
+4. **Construye el script en colaboración** — sección por sección, con feedback en cada paso
+5. **Aplica los frameworks invisibles** — 4 C's, South Park, 6 Sentidos, Banco de Credibilidad, Puente del Significado
+6. **Pasa el test de oralidad** en cada frase
+7. **Entrega el script final** en formato frase-por-frase con timestamps
 
 ---
 
@@ -32,39 +48,16 @@ Le compartes una historia real tuya y la skill ejecuta automáticamente un flujo
 
 ```
 viral-storytelling-scripts/
-├── SKILL.md                          # Instrucciones del flujo + reglas no negociables
+├── SKILL.md                          # Instrucciones + 7 reglas críticas v2
+├── README.md                         # Este archivo
 ├── references/
-│   ├── hooks-bank.md                 # 100 hooks organizados en 9 categorías
-│   ├── narrative-framework.md        # 4 C's, South Park, 6 Sentidos, Puente
-│   └── algorithm-filter.md           # 4 Jinetes + Ingeniería de comentarios
+│   ├── hooks-bank.md                 # 100 hooks en 9 categorías
+│   ├── narrative-framework.md        # 4 C's invisibles, South Park, 6 Sentidos, Puente, Test de oralidad
+│   ├── algorithm-filter.md           # 4 Jinetes + Ingeniería de comentarios
+│   └── pre-questionnaire.md          # 10 preguntas obligatorias antes de escribir
 └── assets/
-    └── output-template.md            # Formato exacto del entregable
+    └── output-template.md            # Formato frase-por-frase
 ```
-
-### El banco de 100 hooks
-
-Los hooks están organizados en 9 categorías para que la skill seleccione siempre desde 3 ángulos emocionales distintos:
-
-- **Curiosidad** — intriga y descubrimiento
-- **Controversia** — postura contraria, polariza
-- **Urgencia** — ventana de oportunidad
-- **Transformación** — antes/después claro
-- **Identificación & Dolor** — conecta con dolor común
-- **Listas** — promesa de estructura
-- **Autoridad** — credibilidad demostrable
-- **Comparación** — esto vs aquello
-- **Storytelling** — narrativa con giro
-
-### Los frameworks aplicados
-
-| Framework | De quién | Para qué sirve |
-|---|---|---|
-| **Estructura 4 C's** | Caleb Ralston | Apertura: Call out → Credibility → Compass → Core Learning |
-| **Regla South Park** | Kallaway | Reemplaza "y luego" por "pero" / "por lo tanto" |
-| **6 Sentidos** | Vinh Giang | Activa neuronas espejo en el momento pico |
-| **Banco de Credibilidad** | Caleb Ralston | Inyecta autoridad con datos concretos |
-| **Puente del Significado** | Vinh Giang | Conecta historia con lección universal |
-| **4 Jinetes del Engagement** | Kallaway | Filtro de calidad antes de escribir |
 
 ---
 
@@ -79,54 +72,13 @@ Los hooks están organizados en 9 categorías para que la skill seleccione siemp
 
 ## 💬 Cómo usarla
 
-Simplemente comparte una historia real con Claude. La skill se activa con prompts como:
+Comparte una historia real con Claude. Triggers:
 
 - *"Tengo esta historia: [tu historia]. Hazme un script."*
 - *"Ayer me pasó algo en una llamada con cliente, hagamos contenido."*
 - *"Convierte esto en Reel: [anécdota]"*
-- *"Necesito un script de 60 segundos sobre [tema] basado en esta experiencia: [historia]"*
 
-### Ejemplo de output
-
-```markdown
-## 🎣 3 Hooks variantes
-
-**Opción 1 — Curiosidad**
-[Hook adaptado]
-
-**Opción 2 — Identificación/Dolor**
-[Hook adaptado]
-
-**Opción 3 — Controversia**
-[Hook adaptado]
-
-**Recomendado:** Opción 3 — porque la controversia genera comentarios y tu historia tiene un giro real.
-
----
-
-## 🎬 Script (60 segundos)
-
-**0:00 – 0:03 — Hook**
-[Hook recomendado]
-
-**0:03 – 0:15 — Apertura (4 C's)**
-[Call out + Credibility + Compass + Core Learning]
-
-**0:15 – 0:50 — Cuerpo**
-[Narrativa con South Park + 6 Sentidos]
-
-**0:50 – 1:00 — Puente**
-[Frase puente + lección universal]
-
-**1:00 – 1:10 — CTA**
-[Beneficio + acción concreta]
-
----
-
-## 📝 Notas de aplicación
-- Frameworks aplicados, dónde y cómo
-- 4 Jinetes: ✅ Pasa los 4 filtros
-```
+La skill **te hará preguntas** si faltan datos. Es normal — eso es lo que hace que el script salga bien al primer intento.
 
 ---
 
@@ -135,34 +87,23 @@ Simplemente comparte una historia real con Claude. La skill se activa con prompt
 - ❌ Inventar hooks fuera del banco curado
 - ❌ Usar el hook "Tengo una confesión que hacer" (underperforma)
 - ❌ Hacer referencias a cámara, filmación o "como ves" (contenido AI)
-- ❌ Lenguaje de marketing inflado ("transforma tu vida", "secreto definitivo")
-- ❌ Escribir scripts genéricos sin historia real
+- ❌ Lenguaje de marketing inflado
+- ❌ Verbalizar los frameworks ("el primer insight es...", "esto es para X")
+- ❌ Asumir credibilidad o alcance del problema sin preguntar
 - ✅ Español casual, registro hablado
 - ✅ 45-90 segundos (120-220 palabras)
-- ✅ La historia real siempre como ancla
+- ✅ Frase por frase, separadas por línea en blanco
+- ✅ Test de oralidad en cada frase
 
 ---
 
 ## 🎓 Créditos a las fuentes
 
-Esta skill destila las enseñanzas de cuatro creadores cuyo trabajo fue la base del sistema:
-
 - **Caleb Ralston** — Estructura 4 C's, Banco de Credibilidad, Regla 75/20/5
 - **Kallaway** — Regla South Park, 4 Jinetes del Engagement, ingeniería de comentarios
 - **Vinh Giang** — 6 Sentidos para storytelling, Puente del Significado
+- **Trey Parker (South Park)** — Regla "pero/por lo tanto" originaria
 - **Banco de 100 hooks** — Curaduría propia testeada en Reels reales
-
----
-
-## 🔄 Iteración
-
-Después del primer entregable, la skill responde a ajustes naturales:
-
-- *"Otro hook"* → ofrece 2 más de categorías que no se usaron
-- *"Más corto"* → reduce el cuerpo, mantiene estructura
-- *"Más historia, menos lección"* → expande 6 Sentidos, acorta cierre
-- *"Hazlo más controversial"* → cambia hook + refuerza postura
-- *"Cambia el tono"* → reescribe ajustando vocabulario
 
 ---
 
@@ -170,18 +111,13 @@ Después del primer entregable, la skill responde a ajustes naturales:
 
 - Cuenta de Claude.ai con acceso a Skills
 - Tener historias reales que contar (la skill no inventa anécdotas)
+- Disposición a contestar preguntas de pre-questionnaire si faltan datos
 
 ---
 
 ## 📝 Licencia
 
-MIT — Úsala, modifícala, compártela. Si te ayudó a crear contenido que conectó con tu audiencia, mencionar el repo es bienvenido pero no obligatorio.
-
----
-
-## 🤝 Contribuir
-
-¿Tienes hooks que han funcionado bien y quieres aportarlos al banco? ¿Encontraste un patrón narrativo que falta? Abre un issue o un PR.
+MIT — Úsala, modifícala, compártela.
 
 ---
 
